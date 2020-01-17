@@ -1,0 +1,28 @@
+{
+  "name": "jest-pptr-project",
+  "version": "1.0.0",
+  "description": "test framework using jest and puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorFerro/JEST-PPTR-PROJECT.git"
+  },
+  "author": "Igor Ferro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorFerro/JEST-PPTR-PROJECT/issues"
+  },
+  "homepage": "https://github.com/IgorFerro/JEST-PPTR-PROJECT#readme",
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-jest": "^24.9.0",
+    "install": "^0.13.0",
+    "jest": "^24.9.0",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^2.0.0"
+  }
+}
