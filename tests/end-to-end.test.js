@@ -5,14 +5,14 @@ import FeedbackPage from '../pages/FeedbackPage';
 
 describe('End-To-End Test', () => {
     let homePage;
-    let topbar;
+    let topBar;
     let loginPage;
     let feedbackPage;
 
     beforeAll(async () =>{
         jest.setTimeout(15000);
         homePage = new HomePage();
-        topbar = new TopBar();
+        topBar = new TopBar();
         loginPage = new LoginPage();
         feedbackPage = new FeedbackPage();
     })
@@ -26,5 +26,13 @@ describe('End-To-End Test', () => {
         await feedbackPage.isFeedbackFormDisplayed();
         await feedbackPage.submitFeedback('igor','email@email','subject','comment');
      });
+     it('Should login to application', async () =>{
+         await homePage.visit();
+         await topBar.isTopBarDisplayed();
+         await topBar.clickSignInButton();
+         await loginPage.isLoginFormDisplayed();
+         await loginPage.login('username', 'password')
+
+     })
 
 })
